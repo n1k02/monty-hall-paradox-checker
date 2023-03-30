@@ -152,10 +152,13 @@ body {
 @media (width < 1090px) {
     .row {
         flex-wrap: wrap;
+        align-items: flex-start;
+        display: block;
     }
     .col {
         flex: 1 1 100%;
         max-height: 400px;
+        align-items: flex-start;
     }
     .diagram {
         width: 300px;
