@@ -62,7 +62,8 @@ function getPercentIfChange (cases) {
 const btn = document.querySelector('button')
 const checkbox = document.querySelector('input[type="checkbox"]')
 const diagram = document.querySelector('.diagram')
-const diagramAfter = diagram.querySelector('::after')
+const percentWin = document.querySelector('.percents__win')
+const percentLose = document.querySelector('.percents__lose')
 btn.addEventListener('click', ()=> {
     const cases = Number(document.querySelector('input.cases').value)
     let percent;
@@ -80,7 +81,7 @@ btn.addEventListener('click', ()=> {
             diagram.classList.add('win')
         }
         document.documentElement.style.setProperty('--angle', `${1-percent}turn`)
-
     }
-
+    percentWin.innerHTML = `${Math.floor(percent*100)}%`
+    percentLose.innerHTML = `${Math.floor(100-(percent*100))}%`
 })

@@ -139,6 +139,35 @@ body {
     border-radius: 100% 0 0 100% / 50%;
 }
 
+.percents {
+    width: 100%;
+    text-align: center;
+}
+.percent {
+    position: relative;
+}
+.percent::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 5px;
+    left: -20px;
+}
+.percents__win {
+    color: greenyellow;
+}
+.percents__win::before {
+    background: greenyellow;
+}
+.percents__lose {
+    color: red;
+}
+.percents__lose::before {
+    background: red;
+}
+
 @keyframes text-shadow {
     0% {
         text-shadow: #a268d7 -2px 2px 5px;
