@@ -82,6 +82,7 @@ body {
 }
 .choice {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 .choice__text {
@@ -150,10 +151,12 @@ body {
 }
 
 @media (width < 1090px) {
+    body {
+        font-size: 18px;
+    }
     .row {
         flex-wrap: wrap;
         align-items: flex-start;
-        display: block;
     }
     .col {
         flex: 1 1 100%;
@@ -204,8 +207,8 @@ body {
 
 .slider .circle {
     background-color: #212121;
-    height: 2em;
-    width: 2em;
+    height: 1.5em;
+    width: 1.5em;
     border-radius: 50%;
     position: absolute;
     left: 0;
@@ -216,8 +219,8 @@ body {
 .slider .circle::before {
     position: absolute;
     content: "";
-    height: 2.3em;
-    width: 2.3em;
+    height: 2em;
+    width: 2em;
     border-radius: 50%;
     left: 50%;
     top: 50%;
