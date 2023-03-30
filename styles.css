@@ -87,6 +87,7 @@ body {
 }
 .choice__text {
     padding: 20px;
+    text-align: center;
 }
 .button {
     bottom: 20px;
@@ -169,18 +170,22 @@ body {
     }
     .form {
         width: 100%;
+        padding: 10px;
     }
 }
 
 
+
+/* Dark Mode Only ;) */
+
 /* The switch - the box around the slider */
 .switch {
+    padding: 0 20px;
     font-size: 17px;
     position: relative;
     display: inline-block;
     width: 3.5em;
     height: .5em;
-    margin: 0 10px;
 }
 
 /* Hide default HTML checkbox */
@@ -207,8 +212,8 @@ body {
 
 .slider .circle {
     background-color: #212121;
-    height: 1.5em;
-    width: 1.5em;
+    height: 2em;
+    width: 2em;
     border-radius: 50%;
     position: absolute;
     left: 0;
@@ -225,15 +230,15 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: #8707ff;
+    background-color: #a268d7;
     transition: .4s;
 }
 
 .slider .circle::after {
     content: '';
     background-color: #212121;
-    height: 1.7em;
-    width: 1.7em;
+    height: 1em;
+    width: 1em;
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -248,7 +253,7 @@ input:checked + .slider .circle {
 }
 
 input:checked + .slider .circle::before {
-    background-color: #8707ff;
+    background-color: #a268d7;
     transition: .4s;
 }
 
@@ -257,7 +262,6 @@ input:checked + .slider .circle::after {
     height: 0;
     transition: .4s;
 }
-
 
 
 
